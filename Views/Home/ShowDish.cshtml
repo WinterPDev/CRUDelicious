@@ -1,0 +1,24 @@
+@model Dish
+
+<div class="text-center">
+    
+    <div class="d-flexin">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="text-primary card-title">@Model.Name</h3>
+                <hr>
+                <h3>@Model.Description</h3>
+                <hr>
+                <h4>Chef : @Model.Chef</h4>
+                <h4>Calories : @Model.Calories</h4>
+                <h4>Tastiness : @Model.Tastiness</h4>
+            </div>
+        <div class="flex mb-3">
+            <a type="button" class=" btn btn-info text-light" href="/Edit/@Model.DishId">Edit Dish</a>
+            <a type="button" class=" btn btn-danger text-light" href="/delete/@Model.DishId">Delete Dish</a>
+        </div>
+        </div>
+    </div>
+
+
+</div>
